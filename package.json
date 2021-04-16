@@ -1,0 +1,34 @@
+{
+  "name": "divination-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.7.0",
+    "canvas-constructor": "^4.1.0",
+    "common-tags": "^1.8.0",
+    "dblapi.js": "^2.4.1",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "gifencoder": "^2.0.1",
+    "html-entities": "^2.3.2",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.2",
+    "node-fetch": "^2.6.1",
+    "node-osu": "^2.2.1",
+    "pretty-ms": "^7.0.1",
+    "random-js": "^2.1.0",
+    "short-string-number": "^1.0.1",
+    "superagent": "^6.1.0",
+    "to-zalgo": "^1.0.1",
+    "twemoji-parser": "^13.0.0",
+    "weather-js": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  }
+}
