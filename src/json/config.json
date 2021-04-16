@@ -1,0 +1,8 @@
+{
+    "statusURL": "https://srhpyqt94yxb.statuspage.io/api/v2/status.json",
+    "botMaintenance": false,
+    "deleteCommands": false,
+    "deleteTime": 30000,
+    "ownerID": ["799984138111287337", "694542209579745380", "790692222143823913", "598889289694183465", "723950294962012302","567399605877080071"]
+
+}

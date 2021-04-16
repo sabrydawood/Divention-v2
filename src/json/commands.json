@@ -1,0 +1,93 @@
+{
+    "setup": [
+        "set-bio",
+        "set-background",
+        "set-invitelink",
+        "set-channel",
+        "set-desc",
+        "set-photo",
+        "set-prefix",
+        "set-welcome-img",
+        "set-welcome-msg",
+        "set-welcome",
+        "set-lang"
+    ],
+    "canvas" : [
+        "hearts",
+        "gay",
+        "hide-avatar",
+        "choko",
+        "glitch",
+        "gun",
+        "petpet",
+        "police",
+        "triggered",
+        "wanted"
+    ],
+    "dump": [
+        "send",
+        "preview"
+    ],
+    "economy": [
+        "credits",
+        "pay",
+        "daily",
+        "rep",
+        "rank",
+        "profile",
+        "addcoins",
+        "moneyleaderboard"
+    ],
+    "fun": [
+        "osu",
+        "zalgo",
+        "weather",
+        "hug"
+    ],
+    "moderation": [
+        "addemojie",
+        "ban",
+        "unban",
+        "kick",
+        "mute",
+        "unmute",
+        "lock",
+        "unlock",
+        "clear",
+        "joinvouce",
+        "leavevoice"
+    ],
+    "ticket": [
+        "set-ticket",
+        "close"
+    ],
+    "utility": [
+        "colors",
+        "color",
+        "vote",
+        "help",
+        "avatar",
+        "avatarserver",
+        "ping",
+        "uptime",
+        "wiki",
+        "invite",
+        "feedback",
+        "bugreport",
+        "serverinfo",
+        "enlarge",
+        "userinfo"
+    ],
+    "ownercmds": [
+        "leaveguild",
+        " shutdown",
+        "guilds",
+        "blacklistall",
+        "unblacklistall",
+        " docs",
+        "dbv",
+        "blacklisteconomy",
+        "unblacklisteconomy",
+        "addcoins"
+    ]
+}
