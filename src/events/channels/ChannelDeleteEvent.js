@@ -6,6 +6,16 @@ module.exports = class ChannelDeleteEvent extends BaseEvent {
   }
   
   async run(client, channel) {
-    
+    const GuildConf = require("../../database/schemas/Guild")
+    const guildConf = await GuildConf.findOne({guildId: channel.guild.id}) || await GuildConf.create({guildId: channel.guild.id})
+    let language = guildConf.language
+    if (!language) language = "en";
+    const lang = require(`../../lang/${language}`);
+
+
+
+
+
+
   }
 }

@@ -6,6 +6,13 @@ module.exports = class PresenceUpdateEvent extends BaseEvent {
   }
   
   async run(client, oldPresence, newPresence) {
+    const GuildConf = require("../../database/schemas/Guild")
+    const guildConf = await GuildConf.findOne({guildId: newPresence.guild.id}) || await GuildConf.create({guildId: newPresence.guild.id})
+    let language = guildConf.language
+    if (!language) language = "en";
+    const lang = require(`../../lang/${language}`);
+
+
     
   }
 }

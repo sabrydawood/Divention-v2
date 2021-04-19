@@ -6,6 +6,13 @@ module.exports = class GuildBanRemoveEvent extends BaseEvent {
   }
   
   async run(client, guild, user) {
-    
+    const GuildConf = require("../../database/schemas/Guild")
+    const guildConf = await GuildConf.findOne({guildId: guild.id}) || await GuildConf.create({guildId: guild.id})
+    let language = guildConf.language
+    if (!language) language = "en";
+    const lang = require(`../../lang/${language}`);
+
+
+
   }
 }

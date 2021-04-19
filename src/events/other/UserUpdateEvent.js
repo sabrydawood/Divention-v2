@@ -6,6 +6,14 @@ module.exports = class UserUpdateEvent extends BaseEvent {
   }
   
   async run(client, oldUser, newUser) {
-    
+    const GuildConf = require("../../database/schemas/Guild")
+    const guildConf = await GuildConf.findOne({guildId: newUser.guild.id}) || await GuildConf.create({guildId: newUser.guild.id})
+    let language = guildConf.language
+    if (!language) language = "en";
+    const lang = require(`../../lang/${language}`);
+
+
+
+
   }
 }

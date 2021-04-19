@@ -2,7 +2,7 @@ const BaseCommand = require('../../utils/structures/BaseCommand');
 
 module.exports = class TestWelcomeCommand extends BaseCommand {
   constructor() {
-    super('testWelcome', 'Fun', []);
+    super('testwlc', 'Fun', []);
   }
 
   run(client, message, args) {

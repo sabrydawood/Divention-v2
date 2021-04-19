@@ -6,6 +6,14 @@ module.exports = class EmojiUpdateEvent extends BaseEvent {
   }
   
   async run(client, oldEmoji, newEmoji) {
-    
+    const GuildConf = require("../../database/schemas/Guild")
+    const guildConf = await GuildConf.findOne({guildId: newEmoji.guild.id}) || await GuildConf.create({guildId: newEmoji.guild.id})
+    let language = guildConf.language
+    if (!language) language = "en";
+    const lang = require(`../../lang/${language}`);
+
+
+
+
   }
 }

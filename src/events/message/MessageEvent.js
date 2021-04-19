@@ -34,10 +34,11 @@ module.exports = class MessageEvent extends BaseEvent {
       discordId: message.author.id
     })
 
-
     let language = guildConf.language
     if (!language) language = "en";
     const lang = require(`../../lang/${language}`);
+
+
     //det values from guild database
     const prefix = guildConf.prefix;
     const credits = userConfig.coins
@@ -74,14 +75,6 @@ module.exports = class MessageEvent extends BaseEvent {
         discordId: user.id,
       }, { globalXp: userxp + xp }, { new: true })
     }
-
-
-
-
-
-
-
-
 
 
     // check if message has a badword in it

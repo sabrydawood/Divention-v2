@@ -6,6 +6,11 @@ module.exports = class ShardReconnectingEvent extends BaseEvent {
   }
   
   async run(client, id) {
-    
+
+
+
+
+
+
   }
 }

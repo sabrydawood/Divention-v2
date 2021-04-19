@@ -6,6 +6,18 @@ module.exports = class ChannelUpdateEvent extends BaseEvent {
   }
   
   async run(client, oldChannel, newChannel) {
-    
+    const GuildConf = require("../../database/schemas/Guild")
+    const guildConf = await GuildConf.findOne({guildId: newChannel.guild.id}) || await GuildConf.create({guildId: newChannel.guild.id})
+    let language = guildConf.language
+    if (!language) language = "en";
+    const lang = require(`../../lang/${language}`);
+
+
+
+
+
+
+
+
   }
 }
