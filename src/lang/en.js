@@ -157,9 +157,6 @@ module.exports = {
 	},
 	/////new uodate 12 / 1 / 2021
 	memAdd: {
-		f1: '𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙴𝚁𝚅𝙴𝚁',
-		f2: '  𝚆𝙴 𝚆𝙸𝚂𝙷 𝚈𝙾𝚄 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚃𝙸𝙼𝙴𝚂',
-		f3: 'Good Bye',
 		mem: 'Member`s :',
 		on: 'Online :',
 		off: 'Offline :',
@@ -369,10 +366,6 @@ module.exports = {
 		f3: 'have been Unmuted',
 		f4: 'By'
 	},
-
-
-
-
 	GLOBAL: {
 		EVERYONE: "Everyone",
 		NOT_SPECIFIED: "Not specified",
@@ -386,6 +379,28 @@ module.exports = {
 		NONE: "None",
 		YES: "Yes",
 		NO: "No",
+	  },
+	  // new way to translation will completed soon
+	  MEMBER: {
+		TAG: "Tag",
+		BOT: "Bot",
+		ROLES: "Roles",
+		BADGES: "Badges",
+		ONLINE: "Online",
+		OFFLINE: "Offline",
+		MEMBERS: "Members",
+		STATUS: "Status",
+		CREATED_ON: "Created on",
+		JOINED_AT: "Joined at",
+		ID: "Id",
+		USERNAME: "Username",
+		NICKNAME: "Nickname",
+		NOT_FOUND: "Member was not found",
+		CANNOT_BE_BANNED: "That member cannot be banned",
+		DM_BAN_MESSAGE: "You have been **banned** from **{guild_name}**, Reason: **{ban_reason}**",
+		GUILD_BAN_MESSAGE:
+		  "{member} was successfully banned from the server. Reason: **{ban_reason}**. I have also send a DM letting the person know.",
+		BOT_DATA: "Bot data does not save, therefore I cannot fetch his data",
 	  },
 	BOT_OWNER: {
 		SHUTDOWN: "Bot is shutting down",
@@ -643,28 +658,26 @@ module.exports = {
 		ROLE_NOT_FOUND: "That role was not found",
 		GUILD_CONFIG: "{guildName}'s config",
 	  },
+	  EVENTS: {
+		CHANNEL_CREATED: "Channel Created",
+		CHANNEL_CREATED_MSG: "{channel_type}: **{channel}** was created",
+		CHANNEL_DELETED: "Channel Deleted",
+		CHANNEL_DELETED_MSG: "{channel_type}: **{channel}** was deleted",
+		CHANNEL_RENAME_MSG: "{channel_type}: **{channel}** was renamed to **{new_channel}**",
+		CHANNEL_RENAME: "Channel Rename",
+		EMOJI_CREATED_MSG: "Emoji: {emoji} was created",
+		EMOJI_CREATED: "New Emoji Created",
+		EMOJI_DELETED_MSG: "Emoji: **{emoji}** was deleted",
+		EMOJI_DELETED: "Emoji Deleted",
+		EMOJI_RENAMED_MSG: "Emoji: **{emoji_name}** was renamed to **{new_name}** ({emoji})",
+		BANNED_MEMBER: "Banned Member",
+		UNBANNED_MEMBER: "UNnanned Member",
+		NOT_FOUND: "Not found",
+		BAN_ADD: "Member Banned",
+		BAN_REMOVE: "Member UnBanned",
+		KICK_ADD: "Member Kicked",
+		EXECUTED_BY: "Executed By",
+		REASON: "Reason",
+	  },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	/// end new update 17 / 1 / 2021
 };

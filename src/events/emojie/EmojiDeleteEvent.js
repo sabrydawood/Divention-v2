@@ -11,7 +11,18 @@ module.exports = class EmojiDeleteEvent extends BaseEvent {
     let language = guildConf.language
     if (!language) language = "en";
     const lang = require(`../../lang/${language}`);
+    const { MessageEmbed } = require("discord.js");
+    const Dbchannel = guildConf.logChannel
+    if (!Dbchannel) return;
+    const Channel = await client.channels.fetch(Dbchannel);
 
+    const embed = new MessageEmbed()
+      .setTitle(lang.EVENTS.EMOJI_DELETED)
+      .setDescription(lang.EVENTS.EMOJI_DELETED_MSG.replace("{emoji}", emoji))
+      .setColor("RED")
+      .setTimestamp();
+
+      Channel.send(embed)
 
 
 

@@ -11,6 +11,10 @@ module.exports = class GuildUpdateEvent extends BaseEvent {
     let language = guildConf.language
     if (!language) language = "en";
     const lang = require(`../../lang/${language}`);
+    const { MessageEmbed } = require("discord.js");
+    const Dbchannel = guildConf.logChannel
+    if (!Dbchannel) return;
+    const Channel = await client.channels.fetch(Dbchannel);
 
     
 

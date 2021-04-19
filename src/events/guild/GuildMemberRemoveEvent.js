@@ -21,7 +21,7 @@ module.exports = class GuildMemberRemoveEvent extends BaseEvent {
     let language = guildConf.language
     if (!language) language = "en";
     const lang = require(`../../lang/${language}`);
-    const welcomeChannel = guildConf.memberLogChannel || "805463360228294699"
+    const welcomeChannel = guildConf.memberLogChannel 
     const dpimg = guildConf.welcomeBg
 
 
@@ -132,13 +132,9 @@ module.exports = class GuildMemberRemoveEvent extends BaseEvent {
     };
 
 
-    // if (!ch) return;
     if (!welcomeChannel) return;
     try {
-      //  message.channel.send("i will start dumping now i will send you message when i will finish")
-      const c = await client.channels.fetch("805463360228294699");
-
-      // await c.send(welcomeMessga)
+      const c = await client.channels.fetch(welcomeChannel);
       c.send(welcomeMessga,{ files: [{ attachment: await createCanvas(), name: "Bye.png" }] });
     } catch (error) {
       console.error(error);

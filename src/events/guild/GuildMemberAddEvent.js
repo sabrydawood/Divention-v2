@@ -18,9 +18,9 @@ module.exports = class GuildMemberAddEvent extends BaseEvent {
     let language = guildConf.language
     if (!language) language = "en";
     const lang = require(`../../lang/${language}`);
-    const welcomeChannel = guildConf.memberLogChannel || "805463360228294699"
+    const welcomeChannel = guildConf.memberLogChannel
     const dpimg = guildConf.welcomeBg
-
+    const AutoRole = guildConf.defaultRole
 
     if (member.user.username.length > 25)
       member.user.username = member.user.username.slice(0, 25) + '...';
@@ -129,14 +129,13 @@ module.exports = class GuildMemberAddEvent extends BaseEvent {
     };
 
 
-    // if (!ch) return;
     if (!welcomeChannel) return;
     try {
-      //  message.channel.send("i will start dumping now i will send you message when i will finish")
-      const c = await client.channels.fetch("805463360228294699");
-
-      // await c.send(welcomeMessga)
-      c.send(welcomeMessga,{ files: [{ attachment: await createCanvas(), name: "welcome.png" }] });
+      if (AutoRole) {
+        member.roles.add(AutoRole)
+      } else return;
+      const c = await client.channels.fetch(welcomeChannel);
+      c.send(welcomeMessga, { files: [{ attachment: await createCanvas(), name: "welcome.png" }] });
     } catch (error) {
       console.error(error);
     }

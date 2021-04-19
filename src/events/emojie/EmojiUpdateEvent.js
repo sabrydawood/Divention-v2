@@ -11,9 +11,28 @@ module.exports = class EmojiUpdateEvent extends BaseEvent {
     let language = guildConf.language
     if (!language) language = "en";
     const lang = require(`../../lang/${language}`);
+    const { MessageEmbed } = require("discord.js");
+    const Dbchannel = guildConf.logChannel
+    if (!Dbchannel) return;
+    const Channel = await client.channels.fetch(Dbchannel);
+    let msg = "";
 
+    if (oldEm.name !== newEm.name) {
+      msg = lang.EVENTS.EMOJI_RENAMED_MSG
+        .replace("{emoji_name}", oldEm.name)
+        .replace("{new_name}", newEm.name)
+        .replace("{emoji}", newEm);
+    } else {
+      return;
+    }
 
+    const embed = new MessageEmbed()
+      .setTitle("Emoji Updated")
+      .setDescription(msg)
+      .setColor("ORANGE")
+      .setTimestamp();
 
+    Channel.send(embed)
 
   }
 }
