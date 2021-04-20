@@ -1,6 +1,5 @@
 const BaseCommand = require('../../utils/structures/BaseCommand');
 const { MessageEmbed } = require('discord.js')
-
 const data = require("../../json/commands/kill.json")
 module.exports = class KillCommand extends BaseCommand {
   constructor() {

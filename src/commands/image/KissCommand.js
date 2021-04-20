@@ -1,7 +1,6 @@
 const BaseCommand = require('../../utils/structures/BaseCommand');
 const data = require("../../json/commands/kiss.json")
 const { MessageEmbed } = require('discord.js')
-
 module.exports = class KissCommand extends BaseCommand {
   constructor() {
     super(

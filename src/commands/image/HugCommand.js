@@ -16,8 +16,6 @@ module.exports = class HugCommand extends BaseCommand {
 
   async run(client, message, args, lang) {
     let victim = message.mentions.users.first() || (args.length > 0 ? message.users.cache.filter(e => e.username.toLowerCase().includes(args.join(" ").toLowerCase())).first() : message.author) || message.author;
-    // const { body } = await superagent
-    //   .get("https://newstepapi.neran590.repl.co/hug");
     const body = data[Math.floor(Math.random() * data.length)];
     const embed = new MessageEmbed()
     .setColor("red")
