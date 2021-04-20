@@ -17,13 +17,20 @@ module.exports = class ChannelUpdateEvent extends BaseEvent {
     if (!oldChannel.guild) return;
     const Dbchannel = guildConf.logChannel
     if (!Dbchannel) return;
+    const fetchedLogs = await newChannel.guild.fetchAuditLogs({
+      limit: 1,
+      type: 'CHANNEL_UPDATE',
+    });
+    const Log = fetchedLogs.entries.first();
+    if (!Log) return;
+    const { executor, target, reason } = Log;
 
     let msg = "";
     const type = newChannel.type === "category" ? "Category" : "Channel";
     if (oldChannel.name !== newChannel.name) {
       msg = lang.EVENTS.CHANNEL_RENAME_MSG.replace("{channel_type}", type)
         .replace("{channel}", oldChannel.name)
-        .replace("{new_channel}", newChannel.name);
+        .replace("{new_channel}", newChannel.name).replace("{executor}" , executor.tag); ;
     } else {
       return;
     }

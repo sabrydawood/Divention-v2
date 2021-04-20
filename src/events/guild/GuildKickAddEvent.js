@@ -27,6 +27,7 @@ module.exports = class GuildBanAddEvent extends BaseEvent {
     // We now grab the user object of the person who kicked our member
     // Let us also grab the target of this action to double check things
     const { executor, target, reason } = kickLog;
+    
     const Channel = await client.channels.fetch(Dbchannel);
     const Reason = reason ?? lang.lock.nores
     if (target.id === member.id) {

@@ -19,11 +19,19 @@ module.exports = class ChannelDeleteEvent extends BaseEvent {
 
     const Dbchannel = guildConf.logChannel
     if (!Dbchannel) return;
+    const fetchedLogs = await channel.guild.fetchAuditLogs({
+      limit: 1,
+      type: 'CHANNEL_DELETE',
+    });
+    const Log = fetchedLogs.entries.first();
+    if (!Log) return;
+    const { executor, target, reason } = Log;
+
     const type = channel.type === "category" ? "Category" : "Channel";
     const msg = lang.EVENTS.CHANNEL_DELETED_MSG.replace("{channel_type}", type).replace(
       "{channel}",
       channel.name
-    );
+    ).replace("{executor}" , executor.tag);
 
     const embed = new MessageEmbed()
       .setTitle(lang.EVENTS.CHANNEL_DELETED)

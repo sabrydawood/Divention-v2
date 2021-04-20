@@ -19,14 +19,22 @@ module.exports = class ChannelCreateEvent extends BaseEvent {
 
     const Dbchannel = guildConf.logChannel
     if (!Dbchannel) return;
+    const fetchedLogs = await channel.guild.fetchAuditLogs({
+      limit: 1,
+      type: 'CHANNEL_CREATE',
+    });
+    const Log = fetchedLogs.entries.first();
+    if (!Log) return;
+    const { executor, target, reason } = Log;
 
+    
     let msg = "";
 
     const type = channel.type === "category" ? "Category" : "Channel";
     msg = lang.EVENTS.CHANNEL_CREATED_MSG.replace("{channel_type}", type).replace(
       "{channel}",
       channel.name
-    );
+    ).replace("{executor}" , executor.tag);;
 
     const embed = new MessageEmbed()
       .setTitle(lang.EVENTS.CHANNEL_CREATED)

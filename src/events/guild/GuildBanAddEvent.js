@@ -15,7 +15,6 @@ module.exports = class GuildBanAddEvent extends BaseEvent {
     const Dbchannel = guildConf.logChannel
     if (!Dbchannel) return;
     const Channel = await client.channels.fetch(Dbchannel);
-    if (!guild.me.hasPermission(["MANAGE_WEBHOOKS", "VIEW_AUDIT_LOG"])) return;
     const audit = await (await guild.fetchAuditLogs()).entries.first();
     const Reason = audit.reason ?? lang.lock.nores
       const bannedMember = user.id === audit.target.id ? audit.target.tag : lang.EVENTS.NOT_FOUND;
