@@ -235,10 +235,6 @@ module.exports = {
 		f8: 'Winds',
 		f9: 'Humidity'
 	},
-	hug: {
-		t: "Here's your Hug, 🤗",
-		c: 'is hugged by'
-	},
 	bio: {
 		max: 'bio can not be more then',
 		success: ' Successfully uploaded your bio',
@@ -680,5 +676,16 @@ module.exports = {
 		EXECUTED_BY: "Executed By",
 		REASON: "Reason",
 	  },
-
+	  IMAGE:{
+		  HUG_C : "Here's your Hug, 🤗",
+		  HUG_T : 'is hugged by',
+		  KISS_C : "Here's your Kiss, 😘",
+		  KISS_T : 'is Kissed by',
+		  KILL_C : "OWW Killed, ",
+		  KILL_T : 'is Killed by',
+		  SLAP_C : "OWW Slapped, ",
+		  SLAP_T : "is Slapped by ",
+		  LOVE_C : "OHH LOVE",
+		  LOVE_T : "LOVED ",
+	  },	
 };

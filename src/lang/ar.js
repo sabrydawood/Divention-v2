@@ -680,5 +680,17 @@ module.exports = {
 			STARBOARD_MESSAGE: "{userTag}, this message is already in the starboard",
 			STARBOARD_NOT_STAR: "{userTag}, you cannot star an empty message.",
 		  },
+		  IMAGE:{
+			HUG_C : "Here's your Hug, 🤗",
+			HUG_T : 'is hugged by',
+			KISS_C : "Here's your Kiss, 😘",
+			KISS_T : 'is Kissed by',
+			KILL_C : "OWW Killed, ",
+			KILL_T : 'is Killed by',
+			SLAP_C : "OWW Slapped, ",
+			SLAP_T : "is Slapped by ",
+			LOVE_C : "OHH LOVE",
+			LOVE_T : "LOVED ",
+		},
 
 };
