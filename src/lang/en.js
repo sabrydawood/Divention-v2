@@ -43,7 +43,7 @@ module.exports = {
 	},
 	lang: {
 		perms: `You do not have permission \`MANAGE_GUILD\``,
-   permss: `i do not have permission \`MANAGE_GUILD\``,
+		permss: `i do not have permission \`MANAGE_GUILD\``,
 		msg: `please enter a vaild language (\`ar\`, \`en\`, \`sp\`)`,
 		err: `The chosen language is already the one active on this server.`
 	},
@@ -100,7 +100,7 @@ module.exports = {
 		pre2: `prefix <prefix>\` to set a new prefix`,
 		prems: `Sorry, You don't have the correct permissions for this command.`,
 		same: `thats is already your server prefix`,
-		done: `Successfully updated prefix to`
+		done: `Successfully updated prefix to `
 	},
 	uptime: {
 		up: `The bot has been up for`
@@ -375,9 +375,9 @@ module.exports = {
 		NONE: "None",
 		YES: "Yes",
 		NO: "No",
-	  },
-	  // new way to translation will completed soon
-	  MEMBER: {
+	},
+	// new way to translation will completed soon
+	MEMBER: {
 		TAG: "Tag",
 		BOT: "Bot",
 		ROLES: "Roles",
@@ -395,9 +395,9 @@ module.exports = {
 		CANNOT_BE_BANNED: "That member cannot be banned",
 		DM_BAN_MESSAGE: "You have been **banned** from **{guild_name}**, Reason: **{ban_reason}**",
 		GUILD_BAN_MESSAGE:
-		  "{member} was successfully banned from the server. Reason: **{ban_reason}**. I have also send a DM letting the person know.",
+			"{member} was successfully banned from the server. Reason: **{ban_reason}**. I have also send a DM letting the person know.",
 		BOT_DATA: "Bot data does not save, therefore I cannot fetch his data",
-	  },
+	},
 	BOT_OWNER: {
 		SHUTDOWN: "Bot is shutting down",
 		EVAL: "Eval command",
@@ -416,8 +416,8 @@ module.exports = {
 		UNBLACKLISTED: "unblacklisted",
 		BLACKLISTED_SUCCESS: "{member} was {type}",
 		BLD_STATUS: "Blacklist status",
-	  },
-	  ECONOMY: {
+	},
+	ECONOMY: {
 		MONEY: "Money",
 		BANK: "Bank",
 		BALANCE: "Balance",
@@ -426,12 +426,12 @@ module.exports = {
 		DAILY_SUCCESS: "You collected your daily of **{amount}** coins",
 		WEEKLY_SUCCESS: "You collected your weekly of **{amount}** coins",
 		STORE_EMPTY:
-		  "The store for this server is empty! Ask a moderator to add items to the store using `{prefix}store add <item>`",
+			"The store for this server is empty! Ask a moderator to add items to the store using `{prefix}store add <item>`",
 		PROVIDE_ITEM_TO_BUY: "Please provide an item to buy",
 		NOT_ENOUGH_MONEY: "You don't have that much money",
 		BUY_SUCCESS: "Successfully bought **{item}** paid **{price}**",
 		NOT_FOUND_STORE:
-		  "**{query}** wasn't found in the store, please use `{prefix}store` to see all items in the store",
+			"**{query}** wasn't found in the store, please use `{prefix}store` to see all items in the store",
 		ALREADY_OWN_ITEM: "You already own this item",
 		PROVIDE_VALID_AMOUNT: "Please provide a valid numeric amount",
 		DEPOSITED_ALL: "Successfully deposited all your money!",
@@ -459,7 +459,7 @@ module.exports = {
 		ROB_SUCCESS: "Successfully robbed **{amount}coins** from **{member}**",
 		STORE: "Store",
 		MANAGE_STORE_PERMS:
-		  "You don't have the correct permissions to manage the store! (Manage Server)",
+			"You don't have the correct permissions to manage the store! (Manage Server)",
 		PROVIDE_VALID_ITEM: "Please provide a valid item to add/remove!",
 		PRICE: "Price",
 		ALREADY_EXISTS: "**{item}** already exist in the store!",
@@ -481,8 +481,8 @@ module.exports = {
 		PROVIDE_AMOUNT: "Please provide an amount to withdraw",
 		NO_MONEY: "You don't have that much money in your bank!",
 		WORK: "Work!",
-	  },
-	  HELP: {
+	},
+	HELP: {
 		CAT_NOT_EXIST: "That category does not exist",
 		CMD_NOT_FOUND: "Command or alias not found",
 		COMMANDS: "Commands",
@@ -505,17 +505,17 @@ module.exports = {
 		EXEMPT: "Exempt Commands (commands that cannot be disabled)",
 		GUILD_PREFIX: "Server prefix",
 		CMD_DESC:
-		  "use `{prefix}help <command name | alias>` to view more info about a command\n More info can be found using the `botinfo` command",
+			"use `{prefix}help <command name | alias>` to view more info about a command\n More info can be found using the `botinfo` command",
 		OWNER_ONLY: "only the owner is allowed to see this!",
 		NSFW_ONLY: "To view nfsw commands check in an nfsw channel!",
-	  },
-	  ADMIN: {
+	},
+	ADMIN: {
 		ADD_CMD_ALREADY_EXISTS: "This command name is already added in guild custom commands.",
 		ADD_CMD_USED_BY_BOT: "This command name is already in use by the bot",
 		ADD_CMD_ADDED: "Successfully added **{name}** as a custom command to this guild",
 		DEL_CMD_NOT_FOUND: "That command was not found",
 		DEL_CMD_DELETED: "Successfully deleted the **{cmd}** Command",
-		DEL_CMD_NO_COMMANDS: "This guild doesn't have any custom commands", 
+		DEL_CMD_NO_COMMANDS: "This guild doesn't have any custom commands",
 		BLACKLISTED_ALREADY_EXISTS: "**{item}** already exist in blacklisted words",
 		BLACKLISTED_ADDED: "Successfully added **{item}** to blacklisted words",
 		BLACKLISTED_NOT_EXISTS: "**{item}** does not exist in blacklisted words",
@@ -528,28 +528,28 @@ module.exports = {
 		C_TOPIC_ADDED: "Successfully updated channel topic to {topic}",
 		DEAFEN_ALREADY_DEAFENED: "User is not in a voice channel or is already deafened",
 		DEAFEN_SUCCESS:
-		  "{member} was successfully deafenned from the server. Reason: **{reason}**. I have also send a DM letting the person know.",
+			"{member} was successfully deafenned from the server. Reason: **{reason}**. I have also send a DM letting the person know.",
 		DEAFEN_SUCCESS_DM: "You've been **Deafenned** from **{guild}**, Reason: **{reason}**",
 		DELETE_PROVIDE_AMOUNT: "Amount must be a valid number and between 0 below 100",
 		DELETE_DELETED: "Deleted {amount} messages.",
 		DELETE_ERROR:
-		  "An error occurred when deleting the messages, make sure they are not older than 14days",
+			"An error occurred when deleting the messages, make sure they are not older than 14days",
 		KICK_CANNOT_KICK: "That person can't be kicked.",
 		KICK_SUCCESS_DM: "You've been **kicked** from **{guild}**, Reason: **{reason}**",
 		KICK_SUCCESS:
-		  "**{tag}** was successfully kicked from the server. Reason: **{reason}**. I have also send a DM letting the person know.",
+			"**{tag}** was successfully kicked from the server. Reason: **{reason}**. I have also send a DM letting the person know.",
 		MUTE_CANNOT_MUTE: "That member cannot be muted",
 		MUTE_ALREADY_MUTED: "Member is already muted",
 		MUTE_SUCCESS_DM: "You've been **muted** from **{guild}**, Reason: **{reason}**",
 		MUTE_SUCCESS:
-		  "**{tag}** was successfully muted from the server. Reason: **{reason}**. I have also send a DM letting the person know.",
+			"**{tag}** was successfully muted from the server. Reason: **{reason}**. I have also send a DM letting the person know.",
 		BAN_BANNED_BY: "**Banned By:**",
 		NUKE_NUKED: "Channel was successfully nuked",
 		NUKE_CANCELED: "Nuke command was canceled",
 		NUKE_CONFIRM: "Are you sure you want to nuke this channel? y/n",
 		TEXT_OR_VALID_CHANNEL: "Please provide text or a valid channel!",
 		DEFAULT_ANNOUNCE_CHANNEL:
-		  "You can also set a default channel using `set announce-channel <channel mention>`",
+			"You can also set a default channel using `set announce-channel <channel mention>`",
 		OPTION_DOES_NOT_EXIST: "{option} does not exist",
 		PROVIDE_COMMAND_OR_CATEGORY_NAME: "Please provide a command or category name",
 		COMMAND_CANNOT_DISABLED: "That command cannot be disabled",
@@ -578,7 +578,7 @@ module.exports = {
 		LOCKED_CHANNEL_REASON: "Successfully locked {channel}, Reason: **{lockReason}**",
 		NO_PERMISSIONS: "Sorry, You don't have the correct permissions for this command.",
 		CURRENT_PREFIX:
-		  "Current server prefix: `{guildPrefix}`\nUse `{guildPrefix}prefix <prefix>` to set a new prefix",
+			"Current server prefix: `{guildPrefix}`\nUse `{guildPrefix}prefix <prefix>` to set a new prefix",
 		UPDATE_PREFIX: "Successfully updated prefix to `{prefix}`",
 		MY_ROLE_MUST_BE_HIGHER: "My role must be higher than **{roleName}** role!",
 		MY_ROLE_MUST_BE_HIGHER2: "My role must be higher than **{needsRoleTag}** highest role!",
@@ -590,6 +590,8 @@ module.exports = {
 		NO_WARNINGS: "There are no warnings",
 		REMOVED_ALL_WARNINGS: "Successfully removed all warnings",
 		ANNOUNCEMENT: "📢 Announcement 📢",
+		PROVIDE_VALID_PREFIX: "Please provide a valid prefix.:",
+		PROVIDE_SAME_PREFIX: " sorry but you can't change it to current prefix",
 		PROVIDE_VALID_TIME: "Please provide a valid time: E.G.:",
 		PROVIDE_VALID_MEMBER: "Please provide valid a member",
 		PROVIDE_VALID_EMOJI: "Please provide a valid emoji",
@@ -653,8 +655,8 @@ module.exports = {
 		USE_WARNS: "Use `{prefix}warnings <user> <warning number>` to view more info about a specific warning",
 		ROLE_NOT_FOUND: "That role was not found",
 		GUILD_CONFIG: "{guildName}'s config",
-	  },
-	  EVENTS: {
+	},
+	EVENTS: {
 		CHANNEL_CREATED: "Channel Created",
 		CHANNEL_CREATED_MSG: "{channel_type}: **{channel}** was created \n BY : **{executor}**",
 		CHANNEL_DELETED: "Channel Deleted",
@@ -675,17 +677,17 @@ module.exports = {
 		KICK_ADD: "Member Kicked",
 		EXECUTED_BY: "Executed By",
 		REASON: "Reason",
-	  },
-	  IMAGE:{
-		  HUG_C : "Here's your Hug, 🤗",
-		  HUG_T : 'is hugged by',
-		  KISS_C : "Here's your Kiss, 😘",
-		  KISS_T : 'is Kissed by',
-		  KILL_C : "OWW Killed, ",
-		  KILL_T : 'is Killed by',
-		  SLAP_C : "OWW Slapped, ",
-		  SLAP_T : "is Slapped by ",
-		  LOVE_C : "OHH LOVE",
-		  LOVE_T : "LOVED ",
-	  },	
+	},
+	IMAGE: {
+		HUG_C: "Here's your Hug, 🤗",
+		HUG_T: 'is hugged by',
+		KISS_C: "Here's your Kiss, 😘",
+		KISS_T: 'is Kissed by',
+		KILL_C: "OWW Killed, ",
+		KILL_T: 'is Killed by',
+		SLAP_C: "OWW Slapped, ",
+		SLAP_T: "is Slapped by ",
+		LOVE_C: "OHH LOVE",
+		LOVE_T: "LOVED ",
+	},
 };
